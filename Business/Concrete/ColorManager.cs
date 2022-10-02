@@ -16,7 +16,20 @@ namespace Business.Concrete
         {
             _colorDal = colorDal;
         }
-    
+
+        public void Add(Color color)
+        {
+            if (color.Name.Length >= 2)
+            {
+                _colorDal.Add(color);
+            }
+            else
+            {
+                Console.WriteLine("Renk ismi En Az iki karakter olmalı");
+            }
+            
+        }
+
         public List<Color> GetCarsByColorId(int id)
         {
             return _colorDal.GetAll(p => p.Id == id);
