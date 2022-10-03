@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entitiess.Abstract
+namespace Core.Entities
 {
-    public interface IEntitiess
+    public interface IEntities
     {
 
     }
